@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <signal.h>
 
-/*This is the Signal Handler */
+//This is the Signal Handler
 void CatchInt(int sig_num){
     printf("\n Don’t do that! \n"); fflush(stdout);
 }
