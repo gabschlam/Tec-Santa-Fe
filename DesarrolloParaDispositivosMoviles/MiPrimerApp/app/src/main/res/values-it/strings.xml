@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MiPrimerissimaApp</string>
+    <string name="etiqueta_1">Questa è la mia prima etichetta.</string>
+    <string name="button_1">Pulsante 1</string>
+</resources>

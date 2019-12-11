@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".Categories">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#950025"
+            android:text="@string/btn_10"
+            style="?android:attr/borderlessButtonStyle"
+            android:textColor="@android:color/background_light" />
+
+        <Button
+            android:id="@+id/categorias"
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:background="#950025"
+            android:text="@string/btn_2"
+            style="?android:attr/borderlessButtonStyle"
+            android:textColor="@android:color/background_light" />
+
+        <Button
+            android:id="@+id/carrito"
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:background="#950025"
+            style="?android:attr/borderlessButtonStyle"
+            android:text="@string/btn_3"
+            android:textColor="@android:color/background_light"/>
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#950025"
+            android:text="@string/btn_4"
+            style="?android:attr/borderlessButtonStyle"
+            android:textColor="@android:color/background_light" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/label_2"
+        android:textColor="#390000"
+        android:textSize="50sp" />
+
+    <FrameLayout
+        android:id="@+id/fragmentoContenedor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="50dp"
+        tools:context="csf.itesm.proyecto.Games" />
+
+</LinearLayout>

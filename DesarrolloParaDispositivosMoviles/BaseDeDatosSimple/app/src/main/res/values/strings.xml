@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BaseDeDatosSimple</string>
+    <string name="label_1">Ingresa el nombre del vehículo a almacenar</string>
+    <string name="hint_1">Nombre del vehículo</string>
+    <string name="btn_1">Guardar</string>
+    <string name="btn_2">Recuperar todo</string>
+    <string name="label_3">Datos almacenados</string>
+</resources>

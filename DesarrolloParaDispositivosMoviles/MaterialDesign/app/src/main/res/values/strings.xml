@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MaterialDesign</string>
+    <string name="btn_1">Botón</string>
+    <string name="label_1">Escribe la marca del automóvil que más te guste</string>
+    <string name="vacio" />
+    <string name="hint">Marca Seleccionada</string>
+</resources>

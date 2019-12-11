@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ObjetosVolley</string>
+    <string name="btn_3">Opción 3</string>
+    <string name="btn_1">Opción 1</string>
+    <string name="btn_2">Opción 2</string>
+    <string name="desc">TODO</string>
+    <string name="image">Imágen</string>
+    <string name="label_1">Menú de opciones</string>
+    <string name="btn_4">String</string>
+    <string name="btn_5">Arreglo JSON</string>
+    <string name="btn_6">Objeto JSON</string>
+</resources>

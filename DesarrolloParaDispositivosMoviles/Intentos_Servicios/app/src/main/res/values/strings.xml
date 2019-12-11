@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Intentos_Servicios</string>
+    <string name="btn_1">Intentos</string>
+    <string name="btn_2">Parámetros</string>
+    <string name="label_1">Menú</string>
+    <string name="btn_3">Abra Navegador</string>
+    <string name="btn_4">Buscar en Navegador</string>
+    <string name="btn_5">Abrir Teclado</string>
+    <string name="btn_6">Llamar</string>
+    <string name="btn_7">Street View</string>
+    <string name="img_1">ferrarri</string>
+    <string name="label_2">Intentos</string>
+    <string name="btn_8">Parámetros Bundle</string>
+</resources>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ExamenFinal</string>
+    <string name="imagen">imagen</string>
+    <string name="btn_1">Actualizar datos</string>
+    <string name="label_1">Actualizar Datos</string>
+    <string name="hint_1">ID Usuario</string>
+    <string name="hint_2">Nombre</string>
+    <string name="hint_3">Apellido</string>
+    <string name="hint_4">Edad</string>
+    <string name="hint_5">Imagen</string>
+    <string name="hint_6">Clave Auto</string>
+</resources>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">VolleyIntro</string>
+    <string name="peticion">Mandar petición</string>
+</resources>

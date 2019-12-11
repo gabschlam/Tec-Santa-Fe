@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="csf.itesm.intentos_servicios">
+
+    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+    <permission android:name="android.permission.CALL_PRIVILEGED"
+        android:protectionLevel="signature|privileged"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".Parametros" />
+        <activity android:name=".Intentos" />
+        <activity
+            android:name=".Splash"
+            android:theme="@style/AppTheme.NoActionBar"> <!-- FOR REMOVING THE TITLE BAR-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

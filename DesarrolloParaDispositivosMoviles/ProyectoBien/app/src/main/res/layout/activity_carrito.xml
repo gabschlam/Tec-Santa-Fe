@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="50dp"
+    tools:context=".Carrito">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#950025"
+            android:text="@string/btn_10"
+            style="?android:attr/borderlessButtonStyle"
+            android:textColor="@android:color/background_light" />
+
+        <Button
+            android:id="@+id/categorias"
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:background="#950025"
+            android:text="@string/btn_2"
+            style="?android:attr/borderlessButtonStyle"
+            android:textColor="@android:color/background_light" />
+
+        <Button
+            android:id="@+id/carrito"
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:background="#950025"
+            style="?android:attr/borderlessButtonStyle"
+            android:text="@string/btn_3"
+            android:textColor="@android:color/background_light"/>
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#950025"
+            android:text="@string/btn_4"
+            style="?android:attr/borderlessButtonStyle"
+            android:textColor="@android:color/background_light" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp"
+        android:text="@string/label_12"
+        android:textColor="#390000"
+        android:textSize="30sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:id="@+id/fragmentoContenedor"
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/comprar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:background="#950025"
+                android:text="@string/btn_19"
+                android:textColor="@android:color/background_light" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

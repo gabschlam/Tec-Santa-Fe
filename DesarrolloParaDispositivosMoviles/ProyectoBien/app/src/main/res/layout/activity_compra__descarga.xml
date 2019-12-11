@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Compra_Descarga">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/home"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#950025"
+            android:text="@string/btn_10"
+            android:textColor="@android:color/background_light" />
+
+        <Button
+            android:id="@+id/categorias"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:background="#950025"
+            android:text="@string/btn_2"
+            android:textColor="@android:color/background_light" />
+
+        <Button
+            android:id="@+id/carrito"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:background="#950025"
+            android:text="@string/btn_3"
+            android:textColor="@android:color/background_light" />
+
+        <Button
+            android:id="@+id/logout"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#950025"
+            android:text="@string/btn_4"
+            android:textColor="@android:color/background_light" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:text="@string/label_13"
+        android:textColor="#390000"
+        android:textSize="30sp" />
+
+    <FrameLayout
+        android:id="@+id/fragmentoContenedor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+</LinearLayout>

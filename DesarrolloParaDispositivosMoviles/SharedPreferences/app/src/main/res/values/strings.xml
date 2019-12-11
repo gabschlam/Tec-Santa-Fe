@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SharedPreferences</string>
+    <string name="hint_1">Nombre de la persona</string>
+    <string name="hint_2">Apellidos</string>
+    <string name="btn_1">Guardar</string>
+    <string name="btn_2">Recuperar</string>
+    <string name="hint_3">Ingresa tu e-mail</string>
+    <string name="hint_4">Teléfono</string>
+</resources>

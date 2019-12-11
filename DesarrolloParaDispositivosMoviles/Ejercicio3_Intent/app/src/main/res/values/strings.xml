@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Intento</string>
+    <string name="label1">Actividad principal</string>
+    <string name="btn_1">Actividad 1</string>
+    <string name="btn_2">Actividad 2</string>
+    <string name="img_1">paisaje</string>
+    <string name="label2">Actividad 1</string>
+    <string name="label3">Actividad 2</string>
+    <string name="img_2">imagen</string>
+    <string name="btn_4">Return</string>
+    <string name="btn_3">Return</string>
+</resources>

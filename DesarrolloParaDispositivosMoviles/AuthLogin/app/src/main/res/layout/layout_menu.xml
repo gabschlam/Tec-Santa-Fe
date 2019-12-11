@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" android:id="@+id/layout_menu" tools:context="csf.itesm.authlogin.Menu">
+    <TextView android:id="@+id/Bienvenido" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:layout_marginTop="69dp" android:text="@string/Bienvenida" android:textColor="@android:color/black" android:textSize="50sp"/>
+    <Button android:id="@+id/botonAutos" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Autos" android:layout_alignParentBottom="true" android:layout_marginBottom="37dp"/>
+
+    <Button
+        android:id="@+id/botonMarcas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/botonAutos"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/Marcas" />
+    <TextView android:id="@+id/textNombre" tools:text=" " android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBaseline="@+id/textAppaterno" android:layout_alignBottom="@+id/textAppaterno"/>
+
+    <TextView
+        android:id="@+id/textAppaterno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Bienvenido"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="60dp"
+        android:layout_toEndOf="@+id/botonAutos"
+        tools:text=" " />
+</RelativeLayout>

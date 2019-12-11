@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MiPrimerApp</string>
+    <string name="etiqueta_1">Esta es mi primer etiqueta</string>
+    <string name="button_1">Botón 1</string>
+    <string name="image">Esta es una imagen</string>
+</resources>
