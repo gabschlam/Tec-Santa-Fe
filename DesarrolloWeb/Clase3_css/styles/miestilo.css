@@ -1,0 +1,51 @@
+/* comentarios */
+* {
+    text-align: center;
+}
+body {
+    width:600px;
+    text-align: center;
+    margin: 0 auto; /* PARA CENTRAR TODO EL BODY */
+}
+h1 {
+    font-style: italic; 
+    color: blue;
+}
+hr {
+    width: 50%;
+}
+.clase1 {
+    width: 70%;
+    border-top: 1px solid red;
+    font-size: 20px;
+}
+p {
+    border: 1px dotted black;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.5em;
+}
+.clase2 {
+    background-color: aqua;
+}
+#parrafo {
+    color: green;
+}
+/* ESTILO PARA IMAGEN DENTRO DE DIV */
+div img {
+    width: 600px;
+    height: 400px;
+}
+.estilo-border {
+    background-color: blue;
+    color: black;
+    padding: 30px 40px 50px;
+    border: 60px solid;
+    border-top:  80px dotted;
+    border-color: red;
+    margin: 20px;
+    border-radius: 50%;
+}
+span {
+    color: black;
+}
