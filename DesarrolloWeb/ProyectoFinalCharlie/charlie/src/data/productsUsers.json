@@ -1,0 +1,322 @@
+[
+  {
+    "idUser": 0,
+    "products": [
+      {
+        "idProd": 0,
+        "name": "Nintendo Switch",
+        "condition": "Regular",
+        "description": "Nintendo Switch seminuevo con dos juegos. Lamentablemente perdi uno de los joycons entonces el paquete solo incluría uno.",
+        "quantity": 1,
+        "price": 6200,
+        "url":  "https://cdn.pocket-lint.com/r/s/1200x/assets/images/140007-games-review-nintendo-switch-review-image1-lp6zy9awm0.jpg"   
+      },
+      {
+        "idProd": 1,
+        "name": "Xbox One",
+        "condition": "Regular",
+        "description": "Xbox One con algunos detalles en la parte trasera pero con muy buena funcionalidad",
+        "quantity": 1,
+        "price": 3200, 
+        "url": "https://www.eluniversal.com.mx/sites/default/files/2020/02/13/xbox-one-jordan.jpg"  
+      },
+      {
+        "idProd": 2,  
+        "name": "Batacas para bateria",
+        "condition": "Excelente",
+        "description": "Batacas seminuevas de muy buena calidad. Solo han sido usadas tres veces.",
+        "quantity": 1,
+        "price": 1200,
+        "url": "https://www.dragonsports.eu/513571-verylarge_default/bate-de-beisbol.jpg"    
+      }
+    ]
+  },
+  {
+    "idUser": 1,
+    "products": [
+      {
+        "idProd": 3,
+        "name": "Mesa de Mezclas",
+        "condition": "Buena",
+        "description": "Conseguí otra nueva y esta mesa fue con la que comencé a aprender. Esta un poco descuidada pero funciona de maravilla, es excelente si quieres comenzar a experimentar en el mundo de la música electrónica.",
+        "quantity": 1,
+        "price": 3200,
+        "url": "https://pioneer-mexico.com.mx/images/list_imagen_id_list_imagen_id_controladores.png"    
+      },
+      {
+        "idProd": 4,
+        "name": "Nintendo Switch",
+        "condition": "Buena",
+        "description": "Nintendo Switch seminuevo con dos juegos.",
+        "quantity": 1,
+        "price": 7000,
+        "url":  "https://cdn.pocket-lint.com/r/s/1200x/assets/images/140007-games-review-nintendo-switch-review-image1-lp6zy9awm0.jpg"    
+      },
+      {
+        "idProd": 5,
+        "name": "Pantalla Samsung de 75 pulgadas",
+        "condition": "Excelente",
+        "description": "La compre en amazon hace un mes pero me voy a mudar a un departamento pequeño y no podré tenerla, esta casi nueva.",
+        "quantity": 1,
+        "price": 12000,
+        "url": "https://images-na.ssl-images-amazon.com/images/I/81EyYSyO8lL._AC_SX466_.jpg"    
+      }
+    ]
+  },
+  {
+    "idUser": 2,
+    "products": [
+      {
+        "idProd": 6,
+        "name": "Saxofón",
+        "condition": "Buena",
+        "description": "Saxofón seminuevo. Lo unico que no incluye es la lengueta pero viene con su estuche para guardarlos y todas sus piezas para limpiarlo.",
+        "quantity": 1,
+        "price": 8000,
+        "url": "https://cdn11.bigcommerce.com/s-a47hlxhj54/images/stencil/1280x1280/products/456/1692/7Y0A4641-web__54125.1497382552.jpg?c=2&imbypass=on"    
+      },
+      {
+        "idProd": 7,
+        "name": "Trampolin",
+        "condition": "Excelente",
+        "description": "Trampolin para espacios pequeños",
+        "quantity": 1,
+        "price": 2300,
+        "url": "https://images-na.ssl-images-amazon.com/images/I/71iMQzscF8S._SL1500_.jpg"    
+      },
+      {
+        "idProd": 8,
+        "name": "Lampara de lava",
+        "condition": "Excelente",
+        "description": "Lampara de lava muy bonita seminueva y chula tuneada como el tsuru de mi abuelo.",
+        "quantity": 1,
+        "price": 1200,
+        "url": "https://www.baustore.ad/1889-large_default/lampara-de-lava-astro.jpg"    
+      }
+    ]
+  },
+  {
+    "idUser": 3,
+    "products": [
+      {
+        "idProd": 9,
+        "name": "Echo Dot",
+        "condition": "Buena",
+        "description": "Echo Dot con un año de uso, en buen estado.",
+        "quantity": 1,
+        "price": 300,
+        "url":  "https://images-na.ssl-images-amazon.com/images/I/61Rr8uxmREL._AC_SL1000_.jpg"   
+      },
+      {
+        "idProd": 10,
+        "name": "Cable de Lightning a USB",
+        "condition": "Excelente",
+        "description": "Cable de Lightning a USB en excelente estado, sin usar.",
+        "quantity": 1,
+        "price": 250, 
+        "url": "https://images-na.ssl-images-amazon.com/images/I/71p11135VSL._AC_SL1500_.jpg"  
+      },
+      {
+        "idProd": 11,  
+        "name": "Xiaomi Audífonos Redmi Airdots",
+        "condition": "Regular",
+        "description": "Vendo Audifonos de Xiaomi. Lamentablemente la batería de uno no funciona bien",
+        "quantity": 1,
+        "price": 400,
+        "url": "https://images-na.ssl-images-amazon.com/images/I/51ql07y5wbL._AC_SL1000_.jpg"    
+      }
+    ]
+  },
+  {
+    "idUser": 4,
+    "products": [
+      {
+        "idProd": 12,
+        "name": "Audifonos Gamer",
+        "condition": "Excelente",
+        "description": "Conseguí otra nueva y estos audifonos me han sacado de apuros. Funcionan de maravilla.",
+        "quantity": 1,
+        "price": 1000,
+        "url": "https://images-na.ssl-images-amazon.com/images/I/61DHTb9mOZL._AC_SL1500_.jpg"    
+      },
+      {
+        "idProd": 13,
+        "name": "Xiaomi Note 8",
+        "condition": "Buena",
+        "description": "Lo vendo porque me compre otro mejor. Tiene un año de uso y un golpe atrás que no afecta.",
+        "quantity": 1,
+        "price": 3000,
+        "url":  "https://images-na.ssl-images-amazon.com/images/I/51Fv-PIiDQL._AC_SL1000_.jpg"    
+      },
+      {
+        "idProd": 14,
+        "name": "AirPods Pro",
+        "condition": "Excelente",
+        "description": "Los compre hace poco. Los vendo porque me gane otros, están en excelentes condiciones.",
+        "quantity": 1,
+        "price": 3000,
+        "url": "https://images-na.ssl-images-amazon.com/images/I/71zny7BTRlL._AC_SL1500_.jpg"    
+      }
+    ]
+  },
+  {
+    "idUser": 5,
+    "products": [
+      {
+        "idProd": 15,
+        "name": "The Last of Us Part II PS4",
+        "condition": "Buena",
+        "description": "Vendo The Last of Us Part II. Lo vendo porque ya no lo uso. Esta un poco rayado de uso",
+        "quantity": 1,
+        "price": 600,
+        "url": "https://images-na.ssl-images-amazon.com/images/I/61gI1lApWxL._AC_SL1000_.jpg"    
+      },
+      {
+        "idProd": 16,
+        "name": "Control Inalámbrico Xbox One",
+        "condition": "Regular",
+        "description": "La palanca izquierda le falla, pero fuera de eso, funciona de maravilla",
+        "quantity": 1,
+        "price": 800,
+        "url": "https://images-na.ssl-images-amazon.com/images/I/61Hiww%2BEVmL._AC_SL1500_.jpg"    
+      },
+      {
+        "idProd": 17,
+        "name": "Control Alámbrico para Xbox One",
+        "condition": "Excelente",
+        "description": "Funciona excelente. Lo vendo porque conseguí uno inalámbrico",
+        "quantity": 1,
+        "price": 500,
+        "url": "https://images-na.ssl-images-amazon.com/images/I/81xSP-GcQoL._AC_SL1500_.jpg"    
+      }
+    ]
+  },
+  {
+    "idUser": 7,
+    "products": [
+      {
+        "idProd": 18,
+        "name": "GTA Premium Xbox One",
+        "condition": "Bueno",
+        "description": "En buenas condiciones, solo está un poco rayado. Lo vendo porque ya no lo uso.",
+        "quantity": 1,
+        "price": 500,
+        "url":  "https://images-na.ssl-images-amazon.com/images/I/81TANBAnpRL._AC_SL1500_.jpg"   
+      },
+      {
+        "idProd": 19,
+        "name": "Audífonos para gaming Cloud Fight",
+        "condition": "Excelente",
+        "description": "Audífonos inalámbricos para los mejores gamers. Funcionan excelente.",
+        "quantity": 1,
+        "price": 1200, 
+        "url": "https://images-na.ssl-images-amazon.com/images/I/71ap89elAuL._AC_SL1428_.jpg"  
+      },
+      {
+        "idProd": 20,  
+        "name": "Super Bomberman R Twister Parent",
+        "condition": "Excelente",
+        "description": "Lo vendo porque mo me gustó mucho. Pero funciona excelente, ningún detalle",
+        "quantity": 1,
+        "price": 1200,
+        "url": "https://images-na.ssl-images-amazon.com/images/I/61ZwBDWOj%2BL._AC_.jpg"    
+      }
+    ]
+  },
+  {
+    "idUser": 10,
+    "products": [
+      {
+        "idProd": 21,
+        "name": "Ukulele madera de Caoba",
+        "condition": "Buena",
+        "description": "En muy buenas condiciones. Únicamente le hace falta una cuerda",
+        "quantity": 1,
+        "price": 750,
+        "url": "https://images-na.ssl-images-amazon.com/images/I/516bV3bbVbL._AC_.jpg"    
+      },
+      {
+        "idProd": 22,
+        "name": "Micrófono profesional",
+        "condition": "Excelente",
+        "description": "Vendo micrófono profesional para cualquier dispositivo. Ideal para grabar lo que sea.",
+        "quantity": 1,
+        "price": 2000,
+        "url":  "https://images-na.ssl-images-amazon.com/images/I/71IwEB22bKL._AC_SL1228_.jpg"    
+      },
+      {
+        "idProd": 23,
+        "name": "Amplificador personal Marshall",
+        "condition": "Regular",
+        "description": "Lo vendo porque se tronó parte de la bocina, Se puede arreglar sin problema",
+        "quantity": 1,
+        "price": 300,
+        "url": "https://images-na.ssl-images-amazon.com/images/I/915o6v37gJL._AC_SL1500_.jpg"    
+      }
+    ]
+  },
+  {
+    "idUser": 11,
+    "products": [
+      {
+        "idProd": 24,
+        "name": "Cubierta antipolvo para teclado",
+        "condition": "Excelente",
+        "description": "Excelente cubierta para teclado. La vendo porque le quedó chico a mi teclado.",
+        "quantity": 1,
+        "price": 250,
+        "url": "https://images-na.ssl-images-amazon.com/images/I/517ClZ-mWkL._AC_SL1100_.jpg"    
+      },
+      {
+        "idProd": 25,
+        "name": "Monitor LED BenQ",
+        "condition": "Excelente",
+        "description": "Vendo mi monitor LED BenQ. Lo vendo porque necesité uno más grande.",
+        "quantity": 1,
+        "price": 2300,
+        "url": "https://images-na.ssl-images-amazon.com/images/I/71BuyRgSzdL._AC_SL1280_.jpg"    
+      },
+      {
+        "idProd": 26,
+        "name": "Amplificador Pequeño",
+        "condition": "Regular",
+        "description": "Lo vendo porque no lo uso. Tiene un golpe en la parte de abajo.",
+        "quantity": 1,
+        "price": 300,
+        "url": "https://images-na.ssl-images-amazon.com/images/I/81fca5PHybL._AC_SL1500_.jpg"    
+      }
+    ]
+  },
+  {
+    "idUser": 16,
+    "products": [
+      {
+        "idProd": 27,
+        "name": "Tripie para Celular",
+        "condition": "Buena",
+        "description": "Excelente opción si eres fan de las fotos con tu celular",
+        "quantity": 1,
+        "price": 1000,
+        "url": "https://images-na.ssl-images-amazon.com/images/I/61j47xIDpKL._AC_SL1500_.jpg"    
+      },
+      {
+        "idProd": 28,
+        "name": "Funda para iPhone 11",
+        "condition": "Excelente",
+        "description": "Excelentes condiciones. La vendo porque compré otra.",
+        "quantity": 1,
+        "price": 150,
+        "url": "https://images-na.ssl-images-amazon.com/images/I/61Nno5JTg9L._AC_SL1500_.jpg"    
+      },
+      {
+        "idProd": 29,
+        "name": "Teclado Portatil",
+        "condition": "Regular",
+        "description": "Muy buen teclado, lamentablemente algunas teclas no funcionan al 100.",
+        "quantity": 1,
+        "price": 1200,
+        "url": "https://images-na.ssl-images-amazon.com/images/I/810vuEXdrgL._AC_SL1500_.jpg"    
+      }
+    ]
+  }
+]

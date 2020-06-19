@@ -1,0 +1,45 @@
+<div class="continer-fluid m-5">
+  <div class="row justify-content-center">
+    <div class="col-8">
+      <div class="card">
+        <div class="card-body">
+          <form class="form m-3">
+            <div class="form-group">
+              <h1>Status de envio</h1>
+              <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-outline-success">
+                  Buenas condiciones (se enviara al cliente)
+                </button>
+                <button type="button" class="btn btn-outline-danger">
+                  Malas condiciones se regresara al vendedor)
+                </button>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Comentarios:</label>
+              <textarea class="form-control" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="start">Fecha de entrega:</label>
+              <input
+                type="date"
+                id="start"
+                name="trip-start"
+                value="2018-07-22"
+                min="2018-01-01"
+                max="2018-12-31"
+              />
+            </div>
+            <button
+              class="btn btn-success btn-block"
+              type="button"
+              routerLink="../main-admin"
+            >
+              Send
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

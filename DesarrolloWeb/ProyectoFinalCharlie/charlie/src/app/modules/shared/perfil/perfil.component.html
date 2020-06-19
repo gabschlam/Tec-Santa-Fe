@@ -1,0 +1,72 @@
+<app-nav-bar></app-nav-bar>
+<div class="container-fluid parallax-3">
+  <div class="row align-items-center pt-4">
+    <div class="col align-self-center perfil text-center" *ngIf="user">
+      <img src="{{ user.user.profile_pic }}" alt="" />
+      <hr />
+      <p
+        style="
+          font-family: 'Roboto mono', monospace;
+          color: white;
+          font-size: 32px;
+        "
+      >
+         {{ user.user.name}} {{user.user.lname}}
+      </p>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-10 p-4 list-inline-item">
+      <h1 class="display-3" i18n>Mis productos</h1>
+      <hr class="my-4" />
+    </div>
+  </div>
+  <div class="row">
+    <div
+      class="col-md-4 col-sm-6 col-12"
+      *ngFor="let product of products; let i = index"
+    >
+      <div class="card h-100">
+        <img src="{{ product.url }}" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title" id="selected">{{ product.name }}</h5>
+          <p class="card-text">{{ product.description }}</p>
+          <p class="card-text">${{ product.price }}.00</p>
+
+          <button
+            type="button"
+            class="btn btn-outline-info btn-block"
+            routerLink="/editar"
+            (click)="findProduct(i)"
+            i18n
+          >
+            Editar
+          </button>
+          <hr />
+          <button
+            type="button"
+            class="btn btn-outline-danger btn-block"
+            (click)="findElement(i)"
+            i18n
+          >
+            Eliminar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row justify-content-center pb-5">
+  <div class="col-sm-12 col-md-10 col-lg-8">
+    <button
+      type="button"
+      class="btn btn-outline-success btn-block"
+      routerLink="/agregar"
+    >
+      +
+    </button>
+  </div>
+</div>
+<app-footer></app-footer>

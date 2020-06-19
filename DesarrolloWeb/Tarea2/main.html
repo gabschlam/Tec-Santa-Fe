@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Gabriel Schlam">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="./Images/favicon.ico" type="image/vnd.microsoft.icon" > <!-- PARA IMAGEN DEL TITULO -->
+		<title>Gabriel Schlam - A01024122</title>
+		<script>
+			function transition(shown, hidden) {
+				document.getElementById(shown).style.display='block';
+				document.getElementById(hidden).style.display='none';
+				return false;
+			}
+		</script>
+		<style>
+			.header {
+				padding: 2px;
+				text-align: center;
+				background: #8FBC8F;
+				color: white;
+				font-size: 15px;
+				font-weight: bold;
+			}
+			body{
+				background-color: #FFFAFA;
+				font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+				margin-left: 100px;
+				margin-right: 100px;
+				margin-bottom: 100px;
+				width: 600px;
+				height: 400px;
+			}
+			p{
+				text-align: justify;
+				color: black;
+			}
+			table {
+				font-family: arial, sans-serif;
+				border-collapse: collapse;
+				width: 70%;
+			}
+			td, th {
+				border: 1px solid #000000;
+				text-align: left;
+				padding: 8px;
+			}
+			th{
+				border: 1px solid #000000;
+				text-align: center;
+				background-color: #dddddd;
+			}
+			a.button:link, a.button:visited {
+				background-color: green;
+				color: white;
+				padding: 14px 20px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-weight: normal;
+			}
+			a.button:hover, a.button:active {
+				background-color: red;
+			}
+			.logo {
+				width: 200px;
+				height: 100px;
+			}
+			.image1 {
+				width: 95%;
+				height: auto;
+			}
+			.image2 {
+				width: 70%;
+				height: auto;
+			}
+		</style>
+	</head>
+
+	<body>
+		
+		<div id="Menu">
+			<div class="header">
+				<img src="Images/teclogo.png" alt="Logo Tec" class="logo">
+				<div style='color: black'> Gabriel Schlam - A01024122</div>
+				<h1> Men&uacute; Principal </h1>
+				<a href="#" class="button" onclick="return transition('Page1','Menu');">Protocolo HTTP</a>
+				<a href="#" class="button" onclick="return transition('Page2','Menu');">Tabla Comparativa</a>
+			</div>	
+			<br>
+			<h4>Validador de HTML en W3C</h4>
+			<img src="Images/Validator.png" alt="Validator" class="image1">
+		</div>
+
+		<div id="Page1" style="display:none">
+			<div class="header">
+				<h1> Protocolo HTTP </h1>
+			</div>
+			<br>
+			<a href="#" class="button" onclick="return transition('Menu','Page1');">Men&uacute; Principal</a>
+			<h2>&iquest;Qu&eacute; es HTTP&quest;</h2>
+			<p>
+				HTTP (“Hypertext Transfer Protocol”) es un protocolo que nos permite realizar una petición de datos y recursos, como, por ejemplo, documentos HTML.
+				Es la base de cualquier intercambio de datos en la Web, utilizando una estructura Client – Server. Normalmente la petición de datos es iniciada por la entidad que recibirá los datos (Cliente).
+			</p>
+
+			<h2>&iquest;C&oacute;mo es el protocolo&quest;</h2>
+			<img src="Images/HTTP.png" alt="HTTP protocol" class="image2">
+			<p>
+				Los clientes y servidores se comunican intercambiando mensajes. Los mensajes enviados por el cliente son <i>peticiones</i> y los mensajes enviados por el servidor son <i>respuestas</i>.
+			</p>
+
+			<h2>Historia</h2>
+			<p>
+				HTTP fue desarrollado por el World Wide Web Consortium y la Internet Engineering Task Force.
+				<br>
+				Comenzó a diseñarse y desarrollarse a principios de la década de 1990, el cual ha ido evolucionando a lo largo del tiempo, ya que HTTP es un protocolo ampliable.
+				<br>
+				Su primera versión se lanzó en 1991, la cual fue demasiado sencilla, que se volvió obsoleta en 1996, cuando salió la versión 1.0. Este proceso de cambio y búsqueda de una versión que cumpliera con el objetivo culminó en 1999, cuando se lanzó la versión 1.1, la cual es la versión más utilizada actualmente.
+			</p>
+
+			<h3> Bibliograf&iacute;a</h3>
+			<ul>
+				<li> <a href="https://developer.mozilla.org/es/docs/Web/HTTP/Overview"> https://developer.mozilla.org/es/docs/Web/HTTP/Overview </a></li>
+				<li> <a href="https://www.ecured.cu/Protocolo_de_Transferencia_de_Hipertexto"> https://www.ecured.cu/Protocolo_de_Transferencia_de_Hipertexto </a></li>
+			</ul> 
+
+			<a href="#" class="button" onclick="return transition('Menu','Page1');">Men&uacute; Principal</a>
+			<br>
+			<br>
+
+		</div>
+
+		<div id="Page2" style="display:none">
+			<div class="header">
+				<h1> Tabla Comparativa </h1>
+			</div>
+			<br>
+			<a href="#" class="button" onclick="return transition('Menu','Page2');">Men&uacute; Principal</a>
+			<br>
+			<br>
+			<!-- TABLA -->
+			<table>
+				<tr>
+					<th>CHARACTERISTICS</th> <!-- TITULO -->
+					<th>HTML</th> <th>XHTML</th> <th>XSD</th> <th>XML</th> <!-- CONTENIDO -->
+				</tr>
+				<tr>
+					<td>Filename Extension</td> <!-- TITULO -->
+					<td>.html, .htm</td> <td>.xhtml, .xht, .xml, .html, .htm</td> <td>.xsd</td> <td>.xml</td> <!-- CONTENIDO -->
+				</tr>
+				<tr>
+					<td>Language</td> <!-- TITULO -->
+					<td>Predefined markup language</td> <td>Extensible markup language</td> <td>Extensible markup language</td> <td>For specifying markup language</td> <!-- CONTENIDO -->
+				</tr>
+				<tr>
+					<td>Structural details</td> <!-- TITULO -->
+					<td>It is not provided</td> <td>It is provided</td> <td>It is provided</td> <td>It is provided</td> <!-- CONTENIDO -->
+				</tr>
+				<tr>
+					<td>Purpose</td> <!-- TITULO -->
+					<td>Presentation of the data</td> <td>More creative way of presenting data</td> <td>Validate that XML files conform to a certain format</td> <td>Transfer of data</td> <!-- CONTENIDO -->
+				</tr>
+				<tr>
+					<td>Coding Errors</td> <!-- TITULO -->
+					<td>Small errors are ignored</td> <td>No errors allowed</td> <td>No errors allowed</td> <td>No errors allowed</td> <!-- CONTENIDO -->
+				</tr>
+				<tr>
+					<td>White spaces</td> <!-- TITULO -->
+					<td>No white spaces in code allowed</td> <td>No white spaces in code allowed</td> <td>White spaces in code allowed</td> <td>White spaces in code allowed</td> <!-- CONTENIDO -->
+				</tr>
+				<tr>
+					<td>Nesting</td> <!-- TITULO -->
+					<td>No effect on the code</td> <td>Should be done appropriately</td> <td>Should be done appropriately</td> <td>Should be done appropriately</td> <!-- CONTENIDO -->
+				</tr>
+				<tr>
+					<td>Driven by</td> <!-- TITULO -->
+					<td>Format driven</td> <td>Mix of HTML and XML</td> <td>Content driven</td> <td>Content driven</td> <!-- CONTENIDO -->
+				</tr>
+				<tr>
+					<td>Types of tags</td> <!-- TITULO -->
+					<td>Predefined tags</td> <td>Custom tags</td> <td>Custom tags</td> <td>Custom tags</td> <!-- CONTENIDO -->
+				</tr>
+				<tr>
+					<td>Closing tags</td> <!-- TITULO -->
+					<td>Not always required</td> <td>Essential</td> <td>Essential</td> <td>Essential</td> <!-- CONTENIDO -->
+				</tr>
+				<tr>
+					<td>Quotes</td> <!-- TITULO -->
+					<td>Not required for attribute values</td> <td>Required around attribute values</td> <td>Required around attribute values</td> <td>Required around attribute values</td> <!-- CONTENIDO -->
+				</tr>
+				<tr>
+					<td>Object support</td> <!-- TITULO -->
+					<td>Native object support</td> <td>Native object support</td> <td>Objects must be expressed by conventions</td> <td>Objects must be expressed by conventions</td> <!-- CONTENIDO -->
+				</tr>
+				<tr>
+					<td>Null support</td> <!-- TITULO -->
+					<td>Natively recognizes null value</td> <td>N/D</td> <td>Need to use xsi:nil on elements</td> <td>Need to use xsi:nil on elements</td> <!-- CONTENIDO -->
+				</tr>
+				<tr>
+					<td>Namespaces</td> <!-- TITULO -->
+					<td>Does not support it</td> <td>Provides support</td> <td>Provides support</td> <td>Provides support</td> <!-- CONTENIDO -->
+				</tr>
+				<tr>
+					<td>Formatting decisions</td> <!-- TITULO -->
+					<td>Provides direct mapping for application data</td> <td>Require syntax from XML</td> <td>Require syntax from XML</td> <td>Require more effort to map application types</td> <!-- CONTENIDO -->
+				</tr>
+				<tr>
+					<td>Size</td> <!-- TITULO -->
+					<td>Syntax very brief and provides formatted text</td> <td>Documents with long size</td> <td>Documents with long size</td> <td>Documents with long size</td> <!-- CONTENIDO -->
+				</tr>
+				<tr>
+					<td>Parsing in JavaScript</td> <!-- TITULO -->
+					<td>Not extra application code required</td> <td>Not extra application code required</td> <td>Requires an XML DOM implementation</td> <td>Requires an XML DOM implementation</td> <!-- CONTENIDO -->
+				</tr>
+				<tr>
+					<td>Learning curve</td> <!-- TITULO -->
+					<td>Simple technology stack</td> <td>Between of HTML and XML</td> <td>Similar to XML</td> <td>Very hard because is needed to learn a lot of technologies</td> <!-- CONTENIDO -->
+				</tr>
+				<tr>
+					<td>Case sensitive</td> <!-- TITULO -->
+					<td>No</td> <td>Yes</td> <td>Yes</td> <td>Yes</td> <!-- CONTENIDO -->
+				</tr>
+				<tr>
+					<td>Static or dynamic</td> <!-- TITULO -->
+					<td>Static</td> <td>Static</td> <td>Dynamic</td> <td>Dynamic</td> <!-- CONTENIDO -->
+				</tr>
+			</table>
+
+			<br>
+			<h2> Bibliograf&iacute;a</h2>
+			<ul>
+				<li> <a href="https://www.guru99.com/xml-vs-html-difference.html"> https://www.guru99.com/xml-vs-html-difference.html </a> </li>
+				<li> <a href="http://www.withoutbook.com/DifferenceBetweenSubjects.php?subId1=36&subId2=37&d=Difference%20between%20HTML%20and%20XML">http://www.withoutbook.com/DifferenceBetweenSubjects.php?subId1=36&subId2=37&d=Difference%20between%20HTML%20and%20XML  </a></li>
+				<li> <a href="https://whatis.techtarget.com/definition/XSD-XML-Schema-Definition"> https://whatis.techtarget.com/definition/XSD-XML-Schema-Definition </a> </li>
+			</ul> 
+
+			<a href="#" class="button" onclick="return transition('Menu','Page2');">Men&uacute; Principal</a>
+
+			<br>
+			<br>
+
+		</div>
+		
+	</body>
+
+
+</html>

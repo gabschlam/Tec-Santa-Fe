@@ -1,0 +1,98 @@
+{
+            "products": [
+                {
+                "id": 0,
+                "name": "Xbox One",
+                "description": "Xbox One con algunos detalles en la parte trasera pero con muy buena funcionalidad",
+                "price": 3200, 
+                "url": "https://www.eluniversal.com.mx/sites/default/files/2020/02/13/xbox-one-jordan.jpg"  
+                },
+                {
+                "id": 1,
+                "name": "Batacas para bateria",
+                "description": "Batacas seminuevas de muy buena calidad. Solo han sido usadas tres veces.",
+                "price": 1200,
+                "url": "https://www.dragonsports.eu/513571-verylarge_default/bate-de-beisbol.jpg"    
+                },
+                {
+                "id": 2,
+                "name": "Playstation 4",
+                "description": "Playstation 4 con 12 juegos. Esta muy bien cuidado y funciona perfectamente.",
+                "price": 5450,
+                "url": "https://www.sony.es/image/4dcdfc5416b7185bb72d9d1baa260053?fmt=pjpeg&bgcolor=FFFFFF&bgc=FFFFFF&wid=2515&hei=1320"    
+                },
+                {
+                "id": 3,
+                "name": "Mesa de Mezclas",
+                 "description": "Conseguí otra nueva y esta mesa fue con la que comencé a aprender. Esta un poco descuidada pero funciona de maravilla, es excelente si quieres comenzar a experimentar en el mundo de la música electrónica.",
+                 "price": 3200,
+                 "url": "https://pioneer-mexico.com.mx/images/list_imagen_id_list_imagen_id_controladores.png"    
+               },
+                 {
+                  "id": 4,
+                  "name": "Nintendo Switch",
+                 "description": "Nintendo Switch seminuevo con dos juegos. Lamentablemente perdi uno de los joycons entonces el paquete solo incluría uno.",
+                "price": 6200,
+                "url":  "https://cdn.pocket-lint.com/r/s/1200x/assets/images/140007-games-review-nintendo-switch-review-image1-lp6zy9awm0.jpg"   
+                },
+                {
+                "id": 5,
+                "name": "Pantalla Samsung de 75 pulgadas",
+                "description": "La compre en amazon hace un mes pero me voy a mudar a un departamento pequeño y no podré tenerla, esta casi nueva.",
+                "price": 12000,
+                "url": "https://images-na.ssl-images-amazon.com/images/I/81EyYSyO8lL._AC_SX466_.jpg"    
+                },
+                {
+                "id": 6,
+                "name": "Saxofón",
+                "description": "Saxofón seminuevo. Lo unico que no incluye es la lengueta pero viene con su estuche para guardarlos y todas sus piezas para limpiarlo.",
+                "price": 8000,
+                "url": "https://cdn11.bigcommerce.com/s-a47hlxhj54/images/stencil/1280x1280/products/456/1692/7Y0A4641-web__54125.1497382552.jpg?c=2&imbypass=on"    
+                },
+                {
+                "id": 7,
+                "name": "Trampolin",
+                "description": "Trampolin para espacios pequeños",
+                "price": 2300,
+                "url": "https://images-na.ssl-images-amazon.com/images/I/71iMQzscF8S._SL1500_.jpg"    
+                },
+                {
+                "id": 8,
+                "name": "Lampara de lava",
+                "description": "Lampara de lava muy bonita seminueva y chula tuneada como el tsuru de mi abuelo.",
+                "price": 1200,
+                "url": "https://www.baustore.ad/1889-large_default/lampara-de-lava-astro.jpg"    
+                }
+            ],
+            "users": [
+              {
+                "name": "Diego Moreno",
+                "profile_pic": "../assets/img/Diegolas.jpeg",
+                "products": [
+
+                  {
+                    "id": 0,
+                    "name": "Nintendo Switch",
+                    "description": "Nintendo Switch seminuevo con dos juegos. Lamentablemente perdi uno de los joycons entonces el paquete solo incluría uno.",
+                   "price": 6200,
+                   "url":  "https://cdn.pocket-lint.com/r/s/1200x/assets/images/140007-games-review-nintendo-switch-review-image1-lp6zy9awm0.jpg"   
+                   },
+                   {
+                    "id": 1,
+                    "name": "Xbox One",
+                    "description": "Xbox One con algunos detalles en la parte trasera pero con muy buena funcionalidad",
+                    "price": 3200, 
+                    "url": "https://www.eluniversal.com.mx/sites/default/files/2020/02/13/xbox-one-jordan.jpg"  
+                    },
+                    {
+                    "id": 2,  
+                    "name": "Batacas para bateria",
+                    "description": "Batacas seminuevas de muy buena calidad. Solo han sido usadas tres veces.",
+                    "price": 1200,
+                    "url": "https://www.dragonsports.eu/513571-verylarge_default/bate-de-beisbol.jpg"    
+                    }
+                ]
+              }
+
+            ]
+}

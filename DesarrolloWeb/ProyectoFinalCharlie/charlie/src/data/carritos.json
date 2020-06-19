@@ -1,0 +1,39 @@
+[
+  {
+    "idUser": 1,
+    "products": [
+      {
+        "idProd": 0,
+        "name": "Nintendo Switch",
+        "condition": "Regular",
+        "description": "Nintendo Switch seminuevo con dos juegos. Lamentablemente perdi uno de los joycons entonces el paquete solo incluría uno.",
+        "quantity": 1,
+        "price": 6200,
+        "url":  "https://cdn.pocket-lint.com/r/s/1200x/assets/images/140007-games-review-nintendo-switch-review-image1-lp6zy9awm0.jpg"   
+      }
+    ]
+  },
+  {
+    "idUser": 10,
+    "products": [
+      {
+        "idProd": 5,
+        "name": "Pantalla Samsung de 75 pulgadas",
+        "condition": "Excelente",
+        "description": "La compre en amazon hace un mes pero me voy a mudar a un departamento pequeño y no podré tenerla, esta casi nueva.",
+        "quantity": 1,
+        "price": 12000,
+        "url": "https://images-na.ssl-images-amazon.com/images/I/81EyYSyO8lL._AC_SX466_.jpg"    
+      },
+      {
+        "idProd": 0,
+        "name": "Nintendo Switch",
+        "condition": "Regular",
+        "description": "Nintendo Switch seminuevo con dos juegos. Lamentablemente perdi uno de los joycons entonces el paquete solo incluría uno.",
+        "quantity": 1,
+        "price": 6200,
+        "url":  "https://cdn.pocket-lint.com/r/s/1200x/assets/images/140007-games-review-nintendo-switch-review-image1-lp6zy9awm0.jpg"   
+      }
+    ]
+  }
+]

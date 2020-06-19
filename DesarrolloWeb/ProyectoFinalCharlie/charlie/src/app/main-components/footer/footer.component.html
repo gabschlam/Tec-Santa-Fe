@@ -1,0 +1,72 @@
+<footer class="page-footer font-small stylish-color-dark pt-4">
+  <div class="container text-center text-md-left">
+    <div class="row justify-content-center">
+      <div class="col-lg-3 text-left pt-4">
+        <h5 class="text-muted" i18n>Contenido</h5>
+
+        <ul>
+          <li>
+            <a class="text-muted" routerLink="../home"
+              >Home<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li>
+            <a class="text-muted" routerLink="../newsfeed">News Feed</a>
+          </li>
+          <li>
+            <a class="text-muted" routerLink="../contacto" i18n>Contacto</a>
+          </li>
+          <li>
+            <a class="text-muted" routerLink="../perfil" i18n>Perfil</a>
+          </li>
+          <ng-container *ngIf="!authService.loggedIn(); else loggedIn">
+            <li class="nav-item" >
+              <a class="text-muted" routerLink="../log-in" i18n>Ingresar</a>
+            </li>
+            <li class="nav-item" >
+              <a class="text-muted" routerLink="../crear-cuenta" i18n>Registrarse</a>
+            </li>
+          </ng-container>
+          <ng-template #loggedIn>
+          <li class="nav-item" >
+            <a class="text-muted" (click)="logOut()" i18n>Cerrar sesión</a>
+          </li>
+          </ng-template>
+          <li class="text-muted">
+            <a
+            href="../carrito"
+              ><mdb-icon fas icon="shopping-cart" align="center" ></mdb-icon></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 text-center pt-4">
+        <a href="https://facebook.com"
+          ><img src="../../assets/img/icons/facebook.png" alt=""
+        /></a>
+        <a href="https://instagram.com"
+          ><img src="../../assets/img/icons/instagram.png" alt=""
+        /></a>
+        <a href="https://twitter.com"
+          ><img src="../../assets/img/icons/twitter.png" alt=""
+        /></a>
+      </div>
+      <div class="col-lg-4 text-center pt-4">
+        <ul class="text-center justify-content-center">
+          <li class="list-inline-item">
+            <h5 class="mb-1" i18n>¿No tienes cuenta?</h5>
+          </li>
+          <li class="list-inline-item">
+            <a
+              routerLink="../crear-cuenta"
+              class="btn btn-outline-info btn-rounded"
+              i18n
+              >¡Registrate!</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="text-center pt-2 pb-3">© 2020 Copyright Charlie.</div>
+  </div>
+</footer>

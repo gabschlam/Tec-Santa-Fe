@@ -1,0 +1,114 @@
+* {
+    text-align: center;
+}
+body {
+    width:600px;
+    margin: 0 auto; /* PARA CENTRAR TODO EL BODY */
+    background-color: lightgrey;
+    
+}
+h1 {
+    font-style: italic; 
+    color: black;
+}
+p {
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.textbox1 {
+    background-color: cyan;
+    border-color: black;
+    border-radius: 20%;
+    color: grey;
+}
+.textbox2 {
+    background-color: greenyellow;
+    border-color: black;
+    border-radius: 20%;
+    color: black;
+}
+
+input {
+    position: center;
+    margin-top: 1.5em;
+  }
+
+.button {
+    background-image: radial-gradient(red, blue, green);
+    padding: 60px;
+    font-size: 16px;
+    margin: 4px 15px;
+    border-radius: 50%;
+}
+.button2 {
+    background-color: yellow;
+    padding: 60px;
+    font-size: 15px;
+    margin: 4px 15px;
+    border-radius: 50%;
+}
+.button3 {
+    background-color: black;
+    padding: 60px;
+    font-size: 16px;
+    margin: 4px 15px;
+    border-radius: 50%;
+}
+
+/* TABLA */
+.Table {
+    display: table;
+    color: black;
+    margin: 0 auto;
+}
+.Heading {
+    display: table-row;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: yellow;
+}
+.Row {
+    display: table-row;
+    padding: 10px;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.Row:nth-child(even) {
+    background-color: lightcyan;
+}
+.Row:nth-child(odd) {
+    background-color: yellow;
+}
+.Cell {
+    display: table-cell;
+    border: solid;
+    border-width: thin;
+    vertical-align: middle;
+}
+
+img {
+    width: 80px;
+    height: 80px;
+}
+
+span {
+    color: black;
+}
+
+@media only screen and (min-width: 701px) {
+    .Cell
+    {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .Cell
+    {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}

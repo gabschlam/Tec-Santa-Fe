@@ -1,0 +1,10 @@
+@import "./variables";
+footer {
+    background-color: $backgroundFooter;
+    color: #aaaaaa;
+    font-weight: lighter;
+    img{
+      height: 30px;
+      padding-right: 24px;
+    }
+  }

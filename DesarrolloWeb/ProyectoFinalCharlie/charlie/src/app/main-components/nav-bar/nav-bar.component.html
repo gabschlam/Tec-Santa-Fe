@@ -1,0 +1,113 @@
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a
+      class="navbar-brand"
+      style="font-family: 'Roboto mono', monospace;"
+      routerLink=""
+      >Charlie.</a
+    >
+    <button
+      class="navbar-toggler"
+      type="button"
+      (click)="isCollapsed = !isCollapsed"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" [ngbCollapse]="isCollapsed">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="../home" [routerLinkActive]="'active'"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="../news-feed"
+            [routerLinkActive]="'active'"
+            >News Feed</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="../contacto"
+            [routerLinkActive]="'active'"
+            i18n
+            >Contacto</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="../perfil"
+            [routerLinkActive]="'active'"
+            i18n
+            >Perfil</a
+          >
+        </li>
+        <ng-container *ngIf="this.role ==='admin'">
+          <li class="nav-item" >
+            <a
+              class="nav-link"
+              routerLink="../main-admin"
+              [routerLinkActive]="'active'"
+              i18n
+              >Admin Panel</a
+            >
+          </li>
+        </ng-container>
+        <ng-container *ngIf="!authService.loggedIn(); else loggedIn">
+          <li class="nav-item" >
+            <a
+              class="nav-link"
+              routerLink="../log-in"
+              [routerLinkActive]="'active'"
+              i18n
+              >Ingresar</a
+            >
+          </li>
+            <li class="nav-item" >
+            <a
+              class="nav-link"
+              routerLink="../crear-cuenta"
+              [routerLinkActive]="'active'"
+              i18n
+              >Registrarse</a
+            >
+          </li>
+        </ng-container>
+        <ng-template #loggedIn>
+        <li class="nav-item" >
+          <a
+            class="nav-link"
+            (click)="logOut()"
+            [routerLinkActive]="'active'"
+            i18n
+            >Cerrar sesión</a
+          >
+        </li>
+        </ng-template>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/carrito"
+            [routerLinkActive]="'active'"
+            ><mdb-icon fas icon="shopping-cart" align="center" ></mdb-icon></a
+          >
+        </li>
+      </ul>
+
+      <ul class="navbar-nav my-2 my-lg-0">
+        <li class="nav-item">
+          <button class="btn btn-outline-info my-2 my-sm-0" (click)="toggleChild()">
+            Chatbot
+          </button>
+          <div>
+            <app-chatbot [showMePartially]="showChatBot"></app-chatbot>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>

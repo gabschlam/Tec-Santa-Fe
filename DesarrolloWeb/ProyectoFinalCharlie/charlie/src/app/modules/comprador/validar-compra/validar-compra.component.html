@@ -1,0 +1,81 @@
+<app-nav-bar></app-nav-bar>
+<div class="container newsfeed">
+      <div class="row justify-content-center pt-5">
+        <div class="col-10 p-4">
+          <h2 class="display-4" i18n>Gracias por tu compra</h2>
+          <hr class="my-4">
+        </div>
+      </div>
+      <div class="container">
+      <div class="row">
+        <h2 class="display-5" i18n>Sobre tu compra</h2>
+
+        <div class="col-lg-12 p-5 bg-white rounded shadow-sm mb-5">
+
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col" class="border-0 bg-light">
+                    <div class="p-2 px-3 text-uppercase" i18n>Producto</div>
+                  </th>
+                  <th scope="col" class="border-0 bg-light">
+                    <div class="py-2 text-uppercase" i18n>Precio</div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let product of compra.products">
+                  <th scope="row" class="border-0">
+                    <div class="p-2">
+                      <img src="{{ product.url }}" alt="" width="70" class="img-fluid rounded shadow-sm">
+                      <div class="ml-3 d-inline-block align-middle">
+                        <h5 class="mb-0"> <a href="#" class="text-dark d-inline-block align-middle">{{ product.name }}</a></h5><span class="text-muted font-weight-normal font-italic d-block"></span>
+                      </div>
+                    </div>
+                  </th>
+                  <td class="border-0 align-middle"><strong>${{ product.price }}.00</strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="row justify-content-center pb-3">
+        <div class="col-md-8">
+         <form (submit)="validarCompra()" ngNativeValidate>
+          <div class="form-group">
+            <h3 i18n>Valídanos tu compra:</h3>
+            <h5 i18n>¿Llegó bien tu compra?</h5>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="validation" value="si" checked>
+              <label class="form-check-label" for="exampleRadios1" i18n>
+                Sí
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="no">
+              <label class="form-check-label" for="exampleRadios2">
+                No
+              </label>
+            </div>
+            <br>
+            <h5 i18n> Déjanos un comentario adicional</h5>
+             <textarea
+              class="form-control"
+              placeholder="¿En qué estas pensando?"
+              id="exampleFormControlTextarea1"
+              rows="3"
+              [(ngModel)]= "comment"
+              name = "comment"
+              ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" i18n>Enviar</button>
+        </form>
+        </div>
+      </div>
+  </div>
+<app-footer></app-footer>
+

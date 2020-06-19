@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+    <head>
+        <title>Tarea 4</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles/miestilo.css" >
+        <script src="lib/script.js"></script>
+    </head>
+    <body>
+        <h1>Directorio</h1>
+        <form>
+            <input class="textbox1" type="email" id="email" name="email" required>
+            <button class="button" type="button" onclick="searchPerson()"> </button>
+        </form>
+        <br>
+        <div class="Table">
+            <div class="Heading">
+                <div class="Cell"> Nombre           </div>
+                <div class="Cell"> Apellido paterno </div>
+                <div class="Cell"> Apellido materno </div>
+                <div class="Cell"> Email            </div>
+                <div class="Cell"> Fotografía       </div>
+                <div class="Cell"> Celular          </div>
+            </div>
+            <div class="Row">
+                <div class="Cell name"> </div>
+                <div class="Cell lname"> </div>
+                <div class="Cell lname2"> </div>
+                <div class="Cell email">  </div>
+                <div class="Cell">
+                    <img src="" id="image1" alt="per6">
+                </div>
+                <div class="Cell tel">    </div>
+            </div>
+            <div class="Row">
+                <div class="Cell name"> </div>
+                <div class="Cell lname"> </div>
+                <div class="Cell lname2"> </div>
+                <div class="Cell email">  </div>
+                <div class="Cell">
+                    <img src="" id="image2" alt="per8">
+                </div>
+                <div class="Cell tel">    </div>
+            </div>
+            <div class="Row">
+                <div class="Cell name"> </div>
+                <div class="Cell lname"> </div>
+                <div class="Cell lname2"> </div>
+                <div class="Cell email">  </div>
+                <div class="Cell">
+                    <img src="" id="image3" alt="per9">
+                </div>
+                <div class="Cell tel">    </div>
+            </div>
+            <div class="Row">
+                <div class="Cell name"> </div>
+                <div class="Cell lname"> </div>
+                <div class="Cell lname2"> </div>
+                <div class="Cell email">  </div>
+                <div class="Cell">
+                    <img src="" id="image4" alt="per3">
+                </div>
+                <div class="Cell tel">    </div>
+            </div>
+            <div class="Row">
+                <div class="Cell name"> </div>
+                <div class="Cell lname"> </div>
+                <div class="Cell lname2"> </div>
+                <div class="Cell email">  </div>
+                <div class="Cell">
+                    <img src="" id="image5" alt="per1">
+                </div>
+                <div class="Cell tel">    </div>
+            </div>
+            <div class="Row">
+                <div class="Cell name"> </div>
+                <div class="Cell lname"> </div>
+                <div class="Cell lname2"> </div>
+                <div class="Cell email">  </div>
+                <div class="Cell">
+                    <img src="" id="image6" alt="per5">
+                </div>
+                <div class="Cell tel">    </div>
+            </div>
+            <div class="Row">
+                <div class="Cell name"> </div>
+                <div class="Cell lname"> </div>
+                <div class="Cell lname2"> </div>
+                <div class="Cell email">  </div>
+                <div class="Cell">
+                    <img src="" id="image7" alt="per4">
+                </div>
+                <div class="Cell tel">    </div>
+            </div>
+            <div class="Row">
+                <div class="Cell name"> </div>
+                <div class="Cell lname"> </div>
+                <div class="Cell lname2"> </div>
+                <div class="Cell email">  </div>
+                <div class="Cell">
+                    <img src="" id="image8" alt="per10">
+                </div>
+                <div class="Cell tel">    </div>
+            </div>
+            <div class="Row">
+                <div class="Cell name"> </div>
+                <div class="Cell lname"> </div>
+                <div class="Cell lname2"> </div>
+                <div class="Cell email">  </div>
+                <div class="Cell">
+                    <img src="" id="image9" alt="per2">
+                </div>
+                <div class="Cell tel">    </div>
+            </div>
+            <div class="Row">
+                <div class="Cell name"> </div>
+                <div class="Cell lname"> </div>
+                <div class="Cell lname2"> </div>
+                <div class="Cell email">  </div>
+                <div class="Cell">
+                    <img src="" id="image10" alt="per7">
+                </div>
+                <div class="Cell tel">    </div>
+            </div>
+        </div>
+        <script>
+		    getData();
+	    </script>
+        <br>
+        <br>
+        <form action="" onsubmit="convertToMorseCode(); return false;">
+            <label for="email">Palabra a convertir</label>
+            <input class="textbox2" type="text" id="text" required>
+            <br>
+            <label for="email">Tiempo entre dígito (en ms) </label>
+            <input class="textbox2" type="number" id="t_digit" required>
+            <br>
+            <label for="email">Tiempo entre caracter (en ms) </label>
+            <input class="textbox2" type="number" id="t_character" required>
+            <br>
+            <label for="email">Tiempo entre palabra (en ms) </label>
+            <input class="textbox2" type="number" id="t_word" required>
+	        <button type="submit" > Enviar </button>
+        </form>
+        <br>
+        <button class="button2" id="light"></button>
+        <button class="button3" id="light2"> </button>
+
+    </body>
+</html>

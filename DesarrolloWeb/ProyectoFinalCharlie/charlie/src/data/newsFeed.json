@@ -1,0 +1,26 @@
+[
+    {
+        "idUser": 3,
+        "message": "Acerca del proyecto:\n En muchas ocasiones queremos vender artículos nuestros que se encuentran en buenas condiciones, sin embargo, es difícil llegar a un acuerdo con personas que no conocemos.."
+    },
+    {
+        "idUser": 2,
+        "message": "Acerca del proyecto:\n Para poder ser vendedor/comprador en la aplicación se necesitará una cuenta la cual pedirá como requisitos: correo electrónico, la creación de una contraseña e identificación oficial como medida de seguridad. Al realizarse una compra, la aplicación retendrá el capital a disposición y lo liberará al tener el producto en nuestras manos, después de comprobar su condición."
+    },
+    {
+        "idUser": 0,
+        "message": "Acerca del proyecto:\n Otras soluciones como Segunda Mano y Mercadolibre obligan a existir un contacto entre comprador y vendedor, lo cual puede causar inseguridad y falta de integridad, además de desconfianza al vender tu producto."
+    },
+    {
+        "idUser": 1,
+        "message": "Acerca del proyecto:\n Lo malo es que nunca sabemos si es seguro vender tus productos a esas personas ya que corremos el riesgo de que sea un perfil falso y al final te citen en algún lugar riesgoso para despojarte de tu producto."
+    },
+    {
+        "idUser": 0,
+        "message": "Acerca del proyecto:\n Solución: Crear una herramienta en donde interpretaremos el rol de intermediario entre vendedor y comprador. El servicio como intermediario asegura que el producto dado por el vendedor esté en buenas condiciones y que se haya recibido el pago por parte del comprador, antes de enviar el producto y el dinero, respectivamente."
+    },
+    {
+        "idUser": 2,
+        "message": "Acerca del proyecto:\n La aplicación web a desarrollar tendrá como principal función generar la confianza de las compras por internet en los usuarios siendo un intermediario entre el comprador y el vendedor. Los vendedores podrán ingresar para postear sus productos."
+    }
+]

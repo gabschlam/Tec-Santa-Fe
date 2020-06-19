@@ -1,0 +1,19 @@
+.chatbot {
+  position: fixed;
+  bottom: 0px;
+  right: 32px;
+  img {
+    height: 50px;
+    width: 100px;
+    align-self: center;
+  }
+}
+.back-color {
+  background-color: #333333;
+}
+iframe {
+  width: 100%;
+  min-height: 500px;
+  position: sticky;
+  height: 18rem;
+}

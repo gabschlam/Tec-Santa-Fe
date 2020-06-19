@@ -1,0 +1,88 @@
+<body>
+  <app-nav-bar></app-nav-bar>
+  <div class="container pt-5 pb-5">
+    <div class="row justify-content-center pt-5">
+      <div class="col-md-12 col-lg-7 col-sm-12">
+        <h1 class="display-4 text-white text-center" i18n>Editar Producto</h1>
+      </div>
+    </div>
+    <div class="row justify-content-center pt-3">
+      <div class="col-lg-4 col-md-6 col-sm-10">
+        <div class="card">
+          <div class="card-body">
+            <form action="" #f="ngForm" ngNativeValidate>
+              <div class="form-group">
+                <label i18n>Nombre del producto:</label>
+                <input
+                  [(ngModel)]="product.name"
+                  value="{{ product.name }}"
+                  type="text"
+                  class="form-control"
+                  name="name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label i18n>Condición:</label>
+                <input
+                  [(ngModel)]="product.condition"
+                  [value]="product.condition"
+                  type="string"
+                  class="form-control"
+                  name="condition"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label i18n>Precio:</label>
+                <input
+                  [(ngModel)]="product.price"
+                  [value]="product.price"
+                  type="number"
+                  min="0" oninput="this.value = Math.abs(this.value)"
+                  class="form-control"
+                  name="price"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1" i18n
+                  >Descripción:</label
+                >
+                <textarea
+                  class="form-control"
+                  [value]="product.description"
+                  id="exampleFormControlTextarea1"
+                  rows="2"
+                  [(ngModel)]="product.description"
+                  name="description"
+                  required
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <label i18n>Agregar imagen:</label>
+                <input
+                  [(ngModel)]="product.url"
+                  type="text"
+                  class="form-control"
+                  name="url"
+                  required
+                />
+              </div>
+              <button
+                type="submit"
+                class="btn btn-primary btn-block"
+                (click)="updateProduct()"
+                i18n
+              >
+                Guardar cambios
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-footer></app-footer>
+  <body></body>
+</body>

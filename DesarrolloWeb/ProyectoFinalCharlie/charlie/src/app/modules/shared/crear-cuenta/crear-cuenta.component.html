@@ -1,0 +1,111 @@
+<body>
+  <app-nav-bar></app-nav-bar>
+  <div class="container pt-5">
+    <div class="row justify-content-center pt-5">
+      <div class="col-md-12 col-lg-7 col-sm-12">
+        <h1 class="display-4 text-white text-center" i18n>Crea una cuenta</h1>
+      </div>
+    </div>
+    <div class="row justify-content-center pt-3">
+      <div class="col-lg-4 col-md-6 col-sm-10">
+        <div class="card">
+          <div class="card-body">
+            <form action="" #f="ngForm" (ngSubmit)="addUser()" ngNativeValidate>
+              <div class="form-group">
+                <label i18n>Nombre:</label>
+                 <input
+                  [(ngModel)]="user.name"
+                  type="text"
+                  class="form-control"
+                  name="name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label i18n>Apellidos:</label>
+                 <input
+                  [(ngModel)]="user.lname"
+                  type="text"
+                  class="form-control"
+                  name="lname"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label >Agrega imagen de perfil:</label>
+                <input
+                  [(ngModel)]="user.profile_pic"
+                  type="text"
+                  class="form-control"
+                  name="profile_pic"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1" i18n
+                  >Feha de nacimiento:</label>
+                <input
+                  [(ngModel)]="user.dBirth"
+                  type="date"
+                  class="form-control"
+                  name="dBirth"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label i18n>País de residencia:</label>
+                <input
+                  [(ngModel)]="user.country"
+                  type="text"
+                  class="form-control"
+                  name="country"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label>Email:</label>
+                <input
+                  [(ngModel)]="user.email"
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  name="email"
+                  aria-describedby="emailHelp"
+                  placeholder="name@example.com"
+                  required
+                />
+                <small id="emailHelp" class="form-text text-muted" i18n
+                  >Correo electrónico válido.</small
+                >
+              </div>
+              <div class="form-group">
+                <label>Password:</label>
+                <input
+                  [(ngModel)]="password"
+                  name="password"
+                  type="password"
+                  class="form-control"
+                  minlength="6"
+                  required />
+              </div>
+              <div class="form-group">
+                <label i18n>Reingresa password:</label>
+                <input
+                  [(ngModel)]="reingresaPassword"
+                  name="reingresaPassword"
+                  type="password"
+                  class="form-control"
+                  minlength="6"
+                  required />
+              </div>
+              <button type="submit" class="btn btn-primary btn-block" i18n>
+                Crear cuenta
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</body>

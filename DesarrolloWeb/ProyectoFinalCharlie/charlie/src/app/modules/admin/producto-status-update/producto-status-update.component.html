@@ -1,0 +1,155 @@
+<div class="row justify-content-center m-5">
+  <div class="col-8">
+    <div class="card">
+      <div class="card-body">
+        <h1 class="display-4 mb-4">Product Status Update</h1>
+        <div class="row">
+          <div class="col">
+            <button class="btn btn-block btn-success" type="button" (click) = "update('comprado')"  i18n>
+              Recibido
+            </button>
+          </div>
+          <ng-container *ngIf="actualStatus == 'comprado'; else checado">
+            <div class="col">
+              <button class="btn btn-block btn-outline-success" type="button" (click) = "update('checado')" i18n>
+                Checado
+              </button>
+            </div>
+             <div class="col">
+              <button
+                class="btn btn-block btn-outline-success"
+                type="button"
+                (click) = "update('validado')"
+                i18n
+              >
+                Validado
+              </button>
+            </div>
+            <div class="col">
+              <button
+                class="btn btn-block btn-outline-success"
+                type="button"
+                (click) = "update('enviado')"
+                i18n
+              >
+                Enviar
+              </button>
+            </div>
+          </ng-container>
+
+          <ng-template #checado>
+            <div class="col">
+              <button class="btn btn-block btn-success" type="button" (click) = "update('checado')"i18n>
+                Checado
+              </button>
+            </div>
+            <ng-container *ngIf="actualStatus == 'checado'; else validado">
+            <div class="col">
+              <button
+                class="btn btn-block btn-outline-success"
+                type="button"
+                (click) = "update('validado')"
+                i18n
+              >
+                Validado
+              </button>
+            </div>
+            <div class="col">
+              <button
+                class="btn btn-block btn-outline-success"
+                type="button"
+                (click) = "update('enviado')"
+                i18n
+              >
+                Enviar
+              </button>
+            </div>
+            </ng-container>
+          </ng-template>
+
+          <ng-template #validado>
+            <div class="col">
+              <button
+                class="btn btn-block btn-success"
+                type="button"
+                (click) = "update('validado')"
+                i18n
+              >
+                Validado
+              </button>
+            </div>
+            <ng-container *ngIf="actualStatus == 'validado' ; else enviado">
+              <div class="col">
+                <button
+                  class="btn btn-block btn-outline-success"
+                  type="button"
+                  (click) = "update('enviado')"
+
+                  i18n
+                >
+                  Enviar
+                </button>
+              </div>
+            </ng-container>
+          </ng-template>
+
+          <ng-template #enviado>
+            <div class="col">
+              <button
+                class="btn btn-block btn-success"
+                type="button"
+                (click) = "update('enviado')"
+
+                i18n
+              >
+                Enviar
+              </button>
+            </div>
+          </ng-template>
+        </div>
+        <div class="row pt-5">
+          <div class="col">
+            <div class="progress">
+              <div
+                *ngIf="actualStatus == 'comprado'"
+                class="progress-bar progress-bar-striped bg-success progress-bar-animated"
+                role="progressbar"
+                style="width: 25%;"
+                aria-valuenow="25"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+              <div
+                *ngIf="actualStatus == 'checado'"
+                class="progress-bar progress-bar-striped bg-success progress-bar-animated"
+                role="progressbar"
+                style="width: 50%;"
+                aria-valuenow="25"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+              <div
+                *ngIf="actualStatus == 'validado'"
+                class="progress-bar progress-bar-striped bg-success progress-bar-animated"
+                role="progressbar"
+                style="width: 75%;"
+                aria-valuenow="25"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+              <div
+                *ngIf="actualStatus == 'enviado'"
+                class="progress-bar progress-bar-striped bg-success progress-bar-animated"
+                role="progressbar"
+                style="width: 100%;"
+                aria-valuenow="25"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,47 @@
+<app-nav-bar></app-nav-bar>
+<div class="container newsfeed">
+  <div class="row justify-content-center pt-5">
+    <div class="col-10 p-4">
+      <h1 class="display-3">News Feed</h1>
+      <hr class="my-4" />
+    </div>
+  </div>
+  <div class="row justify-content-center pb-3">
+    <div class="col-md-7">
+      <form (submit)="postFeed()" ngNativeValidate>
+        <div class="form-group">
+          <h5 i18n>Escribir:</h5>
+          <textarea
+            class="form-control"
+            placeholder="¿En qué estas pensando?"
+            id="exampleFormControlTextarea1"
+            rows="3"
+            [(ngModel)]= "message"
+            name = "message"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" i18n>Compartir</button>
+      </form>
+    </div>
+  </div>
+  <div class="row justify-content-center pb-3">
+    <div class="col-md-7" *ngFor="let post of feed">
+      <div class="card">
+        <div class="card-header">
+          <img src="{{ post.user.profile_pic }}" class="rounded mr-2" alt="...">
+          <strong class="mr-auto">{{ post.user.name }} {{ post.user.lname}} </strong>
+        </div>
+        <div class="card-body">
+          <p class="card-text" style="margin-bottom: 2rem;white-space:pre-wrap;">{{ post.message }}</p>
+        </div>
+        <div class="card-footer text-muted">
+          {{ post.time }}
+        </div>
+      </div>
+      <br>
+    </div>
+   </div>
+
+  </div>
+<app-footer></app-footer>

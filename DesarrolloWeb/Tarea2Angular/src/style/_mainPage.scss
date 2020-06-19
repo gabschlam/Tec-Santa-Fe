@@ -1,0 +1,29 @@
+@import "./variables";
+/* The ribbons */
+.corner-ribbon{
+    width: 200px;
+    background: $backgroundRibbon;
+    position: absolute;
+    top: 25px;
+    left: -50px;
+    text-align: center;
+    line-height: 50px;
+    letter-spacing: 1px;
+    color: #f0f0f0;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    .shadow{
+      box-shadow: 0 0 3px rgba(0,0,0,.3);
+    }
+    .top-left{
+      left: -50px;
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+    }
+    .top-right{
+      right: -50px;
+      left: auto;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+    }
+  }
