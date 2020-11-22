@@ -1,0 +1,55 @@
+<app-nav-bar></app-nav-bar>
+<div class="container">
+    <br>
+    <br>
+    <div class="row justify-content">
+        <div class="col-10 p-4">
+          <h1 class="display-3" >Agendar salón</h1>
+          <hr class="my-4" />
+        </div>
+      </div>
+      <div class="row justify-content pt-3">
+        <div class="col-lg-8 col-md-6 col-sm-10">
+          <div class="card">
+            <div class="card-body">
+              <form action="" ngNativeValidate>
+                <div class="form-group">
+                  <label >Salón:</label>
+
+                  <select [(ngModel)] = "booking.roomId" name="salones" class="form-control" id="salones"  required>
+                      <option disabled selected value> Selecciona un salón</option>
+                      <option *ngFor="let salon of allSalones" value="{{salon.roomId}}" name="booking.roomId">{{salon.roomId}}</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                    <label >Fecha: </label>
+                    <input [(ngModel)] = "booking.date" type="date" class="form-control" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label >Hora de Inicio: </label>
+                    <input [(ngModel)] = "booking.timeStart" type="time" class="form-control" id="timeStart" name="timeStart" min="07:00" max="21:00" required>
+                </div>
+                <div class="form-group">
+                  <label >Hora de Fin: </label>
+                  <input [(ngModel)] = "booking.timeEnd" type="time" class="form-control" id="timeEnd" name="timeEnd" min="07:00" max="21:00" required>
+                </div>
+                <div class="form-group">
+                    <label >Motivo de reserva:</label>
+                    <input
+                      [(ngModel)] = "booking.concept"
+                      type="text"
+                      class="form-control"
+                      name="concept"
+                      required
+                    />
+                </div>
+                <button type="submit" class="btn btn-primary btn-block" (click)="agregarReserva();">
+                    Reservar salón
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+           
