@@ -1,0 +1,61 @@
+@CHARSET "UTF-8";
+
+body {
+	color:white;
+}
+
+#title {
+	position:absolute;
+	left:20px;
+	top:20px;
+	color:white;
+}
+
+#prompt {
+	position:absolute;
+	bottom:30px;
+	left:20px;
+	color:black;
+	font-weight: bold;
+}
+
+#properties {
+	color:white;
+	position:absolute;
+	left:810px;
+	top:20px;
+	font-size:20px;
+	margin-top:10px;
+	margin-left:10px;
+}
+
+#durationLabel {
+	position:absolute;
+	left:20px;
+	top:76px;
+	font-size:16px;
+}
+
+#durationSlider {
+	position:absolute;
+	left:120px;
+	top:80px;
+	width:80px;
+	height:6px;
+	background:MidnightBlue;
+}
+
+#durationValue {
+	position:absolute;
+	left:220px;
+	top:76px;
+	font-size:16px;
+}
+
+.slider .ui-slider-handle {
+	height:8px;
+	top:-2px;
+	width:16px;
+}
+
+
