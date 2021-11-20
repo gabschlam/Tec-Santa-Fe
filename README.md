@@ -1,6 +1,6 @@
 # Codes from Tec Santa Fe / Códigos de Tec Santa Fe
 ### Description:
-Git created for uploading the works and activities made on the classes on the career of Computer Technology Engineering at Tecnológico de Monterrey Campus Santa Fe.
+Git created to upload the works and activities made in the subjects in the Computer Technology Engineering career at the Tecnológico de Monterrey Campus Santa Fe.
 ### Content:
 * [Programming Fundamentals](Programming-Fundamentals)
 * [Object-oriented programming](Object-oriented-Programming)
