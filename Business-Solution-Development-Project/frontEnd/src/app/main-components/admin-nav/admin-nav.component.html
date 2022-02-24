@@ -1,0 +1,62 @@
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a
+      class="navbar-brand"
+      style="font-family: 'Roboto mono', monospace;"
+      routerLink="/admin"
+      >Farmacias Sanate</a
+    >
+    <button
+      class="navbar-toggler"
+      type="button"
+      (click)="isCollapsed = !isCollapsed"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" [ngbCollapse]="isCollapsed">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/admin" [routerLinkActive]="'active'"
+            >Inventario</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/admin/agregar" [routerLinkActive]="'active'"
+            >Agregar producto</a
+          >
+        </li>
+        <ng-container *ngIf="!authService.loggedIn(); else loggedIn">
+          <li class="nav-item" >
+            <a
+              class="nav-link"
+              routerLink="../log-in"
+              [routerLinkActive]="'active'"
+              i18n
+              >Ingresar</a
+            >
+          </li>
+            <li class="nav-item" >
+            <a
+              class="nav-link"
+              routerLink="../crear-cuenta"
+              [routerLinkActive]="'active'"
+              i18n
+              >Registrarse</a
+            >
+          </li>
+        </ng-container>
+        <ng-template #loggedIn>
+        <li class="nav-item" >
+          <a
+            class="nav-link"
+            (click)="logOut()"
+            [routerLinkActive]="'active'"
+            i18n
+            >Cerrar sesión</a
+          >
+        </li>
+        </ng-template>
+      </ul>
+    </div>
+  </nav>
+</header>

@@ -1,0 +1,85 @@
+#lijlol <stdio.h>
+#leagdir stdio 2
+sof;
+globali misparShalem test;
+tsaf ddd = 3.3;
+mibne {
+    misparShalem num,
+    tsaf float,
+    misparShalem num2
+} struct;
+sof;
+
+functsia tsaf suma (tsaf a, tsaf b) {
+    mibne {
+        misparShalem num,
+        tsaf float,
+        misparShalem num23
+    } struct2;
+
+    tsaf resultado;
+    resultado = a + b;
+    lajazor resultado;
+}
+
+functsia misparShalem main (misparShalem hola, misparShalem hola2) {
+    tsaf x;
+    tsaf y;
+    tsaf resultado;
+    tsaf res;
+    to op = '+'; 
+    adpes ("Ingrese operacion:"); 
+    adpesnl ("%c", op); 
+    kara ("%c", op);
+    adpes ("Ingrese x:"); 
+    kara ("%f", x); 
+    adpes ("Ingrese y:"); 
+    kara ("%f", y);
+
+    struct.float = 1.22;
+
+    im (op == '+' && op != '-') { 
+        resultado = x + y;
+    }
+    ajer { 
+        resultado = 1.0; 
+        misparShalem i = 0;
+        misparShalem exponente = 1;
+        tsaf base = 1.0;
+        bazman (exponente > i){ 
+            resultado = resultado * base; 
+            i = i; 
+        };
+    };
+    res = suma(x, y);
+    adpes("El resultado es: "); 
+    adpesnl("%f", resultado); 
+    lajazor 0; 
+}
+
+functsia misparShalem funcs(to x, tsaf y){
+    misparShalem num1;
+    misparShalem num2;
+    num1 = 1;
+    num2 = 2;
+
+    eseder misparShalem miArray[num1][num2];
+
+    miArray[0][1] = 3;
+    lajazor num1;
+}
+
+functsia misparShalem x(to x, tsaf y){
+    misparShalem num1;
+    misparShalem num2;
+    num1 = 1;
+    num2 = 2;
+
+    eseder misparShalem miArray[num1][num2];
+
+    miArray[0][1] = 3;
+
+    num1 = funcs('c', 2.3);
+
+    lajazor num1;
+}

@@ -15,6 +15,8 @@ Git created to upload the works and activities made in the subjects in the Compu
 * [Software Architecture And Design](Software-Architecture-and-Design)
 * [Computational Graphics](Computational-Graphics)
 * [Web Development Lab](Web-Development-Lab)
+* [Compiler Design](Compiler-Design)
+* [Business Solution Development Capstone Project](Business-Solution-Development-Project)
 --------------------------------------------------------------------------------------------------------------------------------------
 ### Descripción:
 Git creado para subir los trabajos y actividades creadas en las materias en la carrera de Ingeniería en Tecnologías Computacionales en el Tecnológico de Monterrey Campus Santa Fe.
@@ -32,3 +34,5 @@ Git creado para subir los trabajos y actividades creadas en las materias en la c
 * [Diseño y Arquitectura De Software](Software-Architecture-and-Design)
 * [Gráficas Computacionales](Computational-Graphics)
 * [Laboratorio de Desarrollo Web](Web-Development-Lab)
+* [Diseño de Compiladores](Compiler-Design)
+* [Proyecto Integrador para el Desarrollo de Soluciones Empresariales](Business-Solution-Development-Project)

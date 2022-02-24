@@ -1,0 +1,7 @@
+#lijlol <stdio.h>
+sof;
+sof;
+functsia misparShalem main(batel) {
+    adpes("Hello World");
+    lajazor 0;
+}

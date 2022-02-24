@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700');
+@import "./parallax";
+@import "./variables";
+@import "./footer";
+@import "./header";
+@import "./mainPage";
+@import '~bootstrap/scss/bootstrap-grid';
+@import '~bootstrap/scss/bootstrap-reboot';
+@import '~bootstrap/scss/bootstrap';
+
+main {
+  position: relative;
+}
+
+.contacto{
+  background-image: url('https://tupuca.com/wp-content/uploads/2018/02/contact.jpg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto ;
+  max-width: 100% ;
+  height: auto ;
+}
+.newsfeed {
+  img{
+    height: 36px;
+  }
+}
+.card-imagen {
+  img{
+    max-height: 200px;
+    overflow: hidden;
+  }
+}
+.perfil {
+  img{
+    height: 230px;
+    border-radius: 100%;
+    border: 5px solid white;
+  }
+}

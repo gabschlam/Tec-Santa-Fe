@@ -1,0 +1,126 @@
+<app-admin-nav></app-admin-nav>
+<body>
+  <div class="container pt-5 pb-5">
+    <div class="row justify-content-center pt-5">
+      <div class="col-md-12 col-lg-7 col-sm-12">
+        <h1 class="display-4 text-white text-center" i18n>Agregar Producto</h1>
+      </div>
+    </div>
+    <div class="row justify-content-center pt-3">
+      <div class="col-lg-7 col-md-6 col-sm-10">
+        <div class="card">
+          <div class="card-body">
+            <form action="" #f="ngForm" (ngSubmit)="addProduct()" ngNativeValidate>
+              <div class="form-group">
+                <label i18n>Nombre del producto:</label>
+                <input
+                  [(ngModel)]="product.name"
+                  type="text"
+                  class="form-control"
+                  name="name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1" i18n
+                  >Descripción:</label
+                >
+                <textarea
+                  [(ngModel)]="product.description"
+                  name="description"
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="2"
+                  required
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <label i18n>Tamaño:</label>
+                <input
+                  [(ngModel)]="product.size"
+                  name="size"
+                  type="text"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label i18n>Presentación:</label>
+                <input
+                  [(ngModel)]="product.presentation"
+                  name="presentation"
+                  type="text"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label i18n>Precio:</label>
+                <input
+                  [(ngModel)]="product.price"
+                  name="price"
+                  type="number"
+                  min="0" oninput="this.value = Math.abs(this.value)"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label i18n>Agregar imagen:</label>
+                <input
+                  [(ngModel)]="product.url"
+                  type="text"
+                  class="form-control"
+                  name="url"
+                  required
+                />
+              </div>
+              <label>Selecciona tiendas:</label>
+                <ul >
+                  <li class="custom-control custom-checkbox" *ngFor="let facility of facilities; let i = index">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    id="{{ facility._id }}"
+                    (change)="checkboxChecked(i, $event, facility)"
+                  />
+                  <label
+                    class="custom-control-label"
+                    for="{{ facility._id }}"
+                    >{{ facility.name }}</label
+                  ></li>
+                </ul>
+                <div class="card-body">
+                  <div id="table" class="table-editable">
+                    <table class="table table-bordered table-responsive-md table-striped text-center">
+                      <tr>
+                        <th class="text-center">Tienda</th>
+                        <th class="text-center">Ciudad</th>
+                        <th class="text-center">Cantidad</th>
+                      </tr>
+                      <tr *ngFor="let facility of facilities; let id = index">
+                        <td *ngIf="!facility.hideRow">
+                          <span contenteditable="false">{{facility.name}}</span>
+                        </td>
+                        <td *ngIf="!facility.hideRow">
+                          <span contenteditable="false">{{facility.address[0].state}}</span>
+                        </td>
+                        <td *ngIf="!facility.hideRow">
+                          <span contenteditable="true" (keyup)="changeValue(id, $event)" (blur)="updateList(id, $event)"></span>
+                        </td>
+                      </tr>
+                    </table>
+                    <label style="text-align: right;">Cantidad total a agregar: {{totalQuantity}}</label>
+                  </div>
+                </div>
+              <button type="submit" class="btn btn-primary btn-block" i18n>
+                Agregar artículo
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</body>

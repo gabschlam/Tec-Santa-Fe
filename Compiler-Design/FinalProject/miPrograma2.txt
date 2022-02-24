@@ -1,0 +1,19 @@
+#lijlol "stdio.c"
+sof;
+sof;
+functsia misparShalem main(batel) 
+{
+    misparShalem num1;
+    misparShalem num2;
+    misparShalem num3;
+    num1 = 1;
+    num2 = 2;
+    num3 = 3;
+
+    im(num1 < num2 || num1 < num3)
+    {
+        adpes("El num1 es el menor");
+    }
+    sof;
+    lajazor 0;
+}

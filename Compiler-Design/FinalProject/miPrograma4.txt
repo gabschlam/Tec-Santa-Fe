@@ -1,0 +1,16 @@
+#lijlol <stdio.h>
+sof;
+sof;
+
+functsia misparShalem main(batel) {
+    misparShalem num1;
+    misparShalem num2;
+    num1 = 1;
+    num2 = 2;
+
+    eseder misparShalem miArray[num1][num2];
+
+    miArray[0][1] = 3;
+    adpes("Hello World");
+    lajazor 0;
+}

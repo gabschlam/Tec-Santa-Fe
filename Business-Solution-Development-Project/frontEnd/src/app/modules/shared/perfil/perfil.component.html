@@ -1,0 +1,73 @@
+<app-nav-bar></app-nav-bar>
+<div class="container-fluid parallax-3">
+  <div class="row align-items-center pt-4">
+    <div class="col align-self-center perfil text-center" *ngIf="user">
+      <img src="{{ user.profile_pic }}" alt="" />
+      <hr />
+      <p
+        style="
+          font-family: 'Roboto mono', monospace;
+          color: white;
+          font-size: 32px;
+        "
+      >
+         {{ user.name}} {{user.lname}}
+      </p>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-10 p-4 list-inline-item">
+      <h1 class="display-3" i18n>Mis direcciones</h1>
+      <hr class="my-4" />
+    </div>
+  </div>
+  <div class="row">
+    <div
+      class="col-md-4 col-sm-6 col-12"
+      *ngFor="let address of addresses; let i = index"
+    >
+      <div class="card h-100">
+        <div class="card-body">
+          <ng-container *ngIf="address.recurrent == true; else second">
+            <h5 class="card-title font-weight-bold">Dirección recurrente</h5>
+          </ng-container>
+          <ng-template #second>
+            <h5 class="card-title text-muted">Dirección secundaria</h5>
+          </ng-template>
+          <h5 class="card-text" id="selected">{{ address.street }}</h5>
+          <ng-container *ngIf="address.apartment != null">
+            <p class="card-text">Interior: {{ address.apartment }}</p>
+          </ng-container>
+          <p class="card-text">CP: {{ address.zip }}</p>
+          <p class="card-text">Estado: {{ address.state }}</p>
+          <p class="card-text">País: {{ address.country }}</p>
+          <ng-container *ngIf="address.recurrent == false">
+            <button
+              type="button"
+              class="btn btn-outline-success btn-block"
+              (click)="cambiarRecurrente(i)"
+            >
+              Seleccionar como recurrente
+            </button>
+          </ng-container>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<div class="row justify-content-center pb-5">
+  <div class="col-sm-12 col-md-10 col-lg-8">
+    <button
+      type="button"
+      class="btn btn-outline-success btn-block"
+      routerLink="/agregar-direccion"
+    >
+      +
+    </button>
+  </div>
+</div>
+<br>
+<app-footer></app-footer>
